@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <h2 class="hello">Hello! To start using this weather app, just write a city name and submit!</h2>
+        <div class="weather-container">
+            <form id="form">
+                <input type="text" id="citysearch" placeholder="Enter city here..." class="citysearch">
+            </form>
+            <div class="city">
+                <h1 id="cityname">City Name</h1>
+                <h3 id="population">Population: </h3>
+                <h3 id="date">Monday, September 6</h3>
+            </div>
+            <div class="weather-conditions">
+                <h1 class="weather-icon" style="float: left;"><i class="fas fa-cloud-sun"></i></h1>
+                <h1 class="temperature" id="temperature" style="float: left;">24°C</h1>
+                <h2 class="description" id="description" style="float: left; padding-left: 20px; padding-top: 8px;">Clear</h2>
+                <h3 style="float: right; padding-left: 25px; padding-top: 12px;" id="windspeed">Wind Speed: 9 km/h</h3>
+            </div>
+            <button class="unit" id="unit">Change Unit (°C/°F)</button>
+        </div>
+        <br><br><br>
+        <div class="daily-forecast">
+            <div class="card">
+                <div class="user-info">
+                    <h2>3 Day Forecast</h2>
+            
+                    <table class="forecast-table">
+                        <tr>
+                            <th id="day1">Day 1</th>
+                            <th id="day2">Day 2</th>
+                            <th id="day3">Day 3</th>
+                        </tr>
+                        <tr>
+                            <td id="day1temp">29 °C</td>
+                            <td id="day2temp">29 °C</td>
+                            <td id="day3temp">29 °C</td>
+                        </tr>
+                        <tr>
+                            <td id="day1wind">16 km/h</td>
+                            <td id="day2wind">16 km/h</td>
+                            <td id="day3wind">16 km/h</td>
+                        </tr>
+                        </table>
+            
+                    <div class="repos" id="repos"></div>
+                </div>
+                </div>
+        </div>
+    </body>
+</html>
